@@ -51,9 +51,9 @@ func main() {
 			}
 
 			if p.PortId != 80 && p.PortId != 443 {
-				fmt.Printf("%s://%s:%d\n", schema, host.Addresses[0].Addr, p.PortId)
+				fmt.Printf("%s://%s:%d/\n", schema, host.Addresses[0].Addr, p.PortId)
 			} else {
-				fmt.Printf("%s://%s\n", schema, host.Addresses[0].Addr)
+				fmt.Printf("%s://%s/\n", schema, host.Addresses[0].Addr)
 			}
 
 		}
